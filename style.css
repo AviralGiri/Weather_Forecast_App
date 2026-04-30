@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins",serif;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    background: linear-gradient(#3ca3e8,#e77b39);
+    padding-right: 10px;
+    
+    
+}
+
+.mainbox{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(#260238, #8a4dad);
+    flex-direction: column;
+    color: #fff;
+    border-radius: 20px;
+}
+/* #m1{display: none;} */
+
+#m1 h1{
+    font-size: 40px;
+}
+#m1 h3{
+    color:#eab412 ;
+    font-size: 40px;
+    font-weight: 500;
+}
+#m1 div{
+    text-align: center;
+}
+.inactive{
+    display: none;
+}
+#m3{
+    padding: 10px;
+}
+#wicon{
+    width: 200px;
+    height: 200px;
+}
+.toggle{
+    display:flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 20px;
+}
+/* Container for the toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.toggle p{
+    font-size: 20px;
+    text-align: center;
+    padding-right: 7px;
+    color: #eab412;
+    font-weight: 500;
+}
+
+/* Hide original checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The track (background) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 7px; bottom: 0;
+   background-color: #fff;
+  /* transition: .4s; */
+  border-radius: 30px;
+  height: 24px;
+}
+
+
+/* The handle (white circle) */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 2px;
+  left: 4px;
+  bottom: 4px;
+  background-color:#260238 ;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* State changes when checked */
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.search{
+    width: 45px;
+    height: 45px;
+    background-color:#eab412 ;
+    border-radius: 10px;
+}
+.input{
+    background: #fff;
+    width: 250px;
+    height: 38px;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    font-size: 18px;
+}
+.iconBox{
+    font-size: 20px;
+    text-align: center;
+}
+#clear{
+    width: 100px;
+    height: 100px;
+}
+.tempBox{
+    text-align: center;
+    font-size: 25px;
+}
+.tempBox h1{
+    font-weight: 500;
+}
+.tempBox h3{
+    color: #eab412 ;font-weight: 500;
+}
+.extraData{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+.wind,.humidity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#windicon,#humidicon{
+    width: 50px;
+    height: 50px;
+}
+.windData,.humidData{
+    padding: 10px;text-align: center;
+}
+#windSpeed,#humidPer{
+    font-weight: bold;
+    font-size: 20px;
+}
+.err{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.err h1{
+    font-size: 40px;
+}
+.err h3{
+    color:  #eab412;font-size: 25px;
+}
+.go,.goHome{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #eab412;
+    font-weight: 700;
+    font-size: larger;
+}
