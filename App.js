@@ -114,11 +114,13 @@ letsGo.addEventListener("click", () => {
 
 searchBtn.addEventListener("click", () => {
   fetchWeatherByCity(input.value.trim());
+  input.value="";
 });
 
 input.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     fetchWeatherByCity(input.value.trim());
+    input.value="";
   }
 });
 
